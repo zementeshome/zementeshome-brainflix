@@ -5,8 +5,8 @@ import searchIcon from './../../assets/Icons/SVG/Icon-search.svg'
 function SearchBar() {
     return (
         <div>
-            <input className="header__search-bar"type='text' placeholder="Search"/>
-            <img className="header__search-icon"src={searchIcon} alt="maginifying glass" />
+            <input className="app__header-search"type='text' placeholder="Search"/>
+            <img className="app__header-searchicon"src={searchIcon} alt="maginifying glass" />
         </div>
     )
 }

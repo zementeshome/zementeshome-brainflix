@@ -5,8 +5,8 @@ import uploadIcon from './../../assets/Icons/SVG/Icon-upload.svg'
 function UploadButton() {
     return (
         <div>
-            <button className="header__button" type="button">UPLOAD</button>
-            <img className="header__button-icon"src={uploadIcon} alt="plus sign" />
+            <button className="app__header-button" type="button">UPLOAD</button>
+            <img className="app__header-buttonicon"src={uploadIcon} alt="plus sign" />
         </div>
     )
 }
