@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import HighlightsSection from './components/Highlights/Highlights';
-// import Comments from './components/Comments/Comments';
+import Comments from './components/Comments/Comments';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
          <HighlightsSection />
          </div>
          <div className="app__comments-container">
-          {/* <Comments /> */}
+          <Comments />
          </div>
       </main>
     </div>
