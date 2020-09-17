@@ -8,7 +8,7 @@ function Header(props) {
             <img className="app__header-searchicon"src={process.env.PUBLIC_URL + '/assets/Icons/SVG/Icon-search.svg'} alt="maginifying glass" />
             <button className="app__header-button" type="button">UPLOAD</button>
             <img className="app__header-buttonicon"src={process.env.PUBLIC_URL + '/assets/Icons/SVG/Icon-upload.svg'} alt="plus sign" />
-            <img className ="app__header-usericon" src={props.userImage} alt="user profile circle" />;
+            <img className ="app__header-usericon" src={process.env.PUBLIC_URL + props.userImage} alt="user profile circle" />;
     </header>
     )
 }

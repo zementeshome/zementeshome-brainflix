@@ -2,7 +2,6 @@ import React from 'react';
 
 class AsideCard extends React.Component {
     render() {
-        console.log(this.props.image);
 
 
     return (

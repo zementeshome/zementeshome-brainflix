@@ -1,6 +1,7 @@
 import React from 'react';
 
 class HighlightsCard extends React.Component {
+
     render() {
         
         return (
