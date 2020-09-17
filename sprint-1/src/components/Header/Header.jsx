@@ -1,18 +1,14 @@
 import React from 'react';
-import logo from './../../assets/Logo/Logo-brainflix.svg';
-import searchIcon from './../../assets/Icons/SVG/Icon-search.svg'
-import uploadIcon from './../../assets/Icons/SVG/Icon-upload.svg'
-import userImage from './../../assets/Images/Mohan-muruge.jpg'
 
-function Header() {
+function Header(props) {
     return (
     <header className="app__header">
-        <img className ="App__header-logo" src={logo} alt="brainflix logo" />
+        <img className ="App__header-logo" src={process.env.PUBLIC_URL + '/assets/Logo/Logo-brainflix.svg'} alt="brainflix logo" />
             <input className="app__header-search"type='text' placeholder="Search"/>
-            <img className="app__header-searchicon"src={searchIcon} alt="maginifying glass" />
+            <img className="app__header-searchicon"src={process.env.PUBLIC_URL + '/assets/Icons/SVG/Icon-search.svg'} alt="maginifying glass" />
             <button className="app__header-button" type="button">UPLOAD</button>
-            <img className="app__header-buttonicon"src={uploadIcon} alt="plus sign" />
-            <img className ="app__header-usericon" src={userImage} alt="user profile circle" />;
+            <img className="app__header-buttonicon"src={process.env.PUBLIC_URL + '/assets/Icons/SVG/Icon-upload.svg'} alt="plus sign" />
+            <img className ="app__header-usericon" src={props.userImage} alt="user profile circle" />;
     </header>
     )
 }
