@@ -1,4 +1,5 @@
 import React from 'react';
+import './Hero.scss'
 // import HeroCard from './../HeroCard/HeroCard';
 
 class Hero extends React.Component { 
@@ -8,6 +9,8 @@ class Hero extends React.Component {
             return (
                 <section className="app__hero">
                     <div className="app__hero-container">
+                    <video className="app__hero-video" poster={process.env.PUBLIC_URL + this.props.mainVideo.poster}>
+                </video>
                   <div className="app__hero-playbox">
                   <img className="app__hero-playicon"src={process.env.PUBLIC_URL + '/assets/Icons/SVG/Icon-play.svg'} alt="play button"/>
        </div>
@@ -20,10 +23,8 @@ class Hero extends React.Component {
             </div>
             <div>
             <p className="app__hero-duration">
-                {this.props.mainVideo.duration}
+                {this.props.duration}
             </p>
-            <video className="app__hero-video" poster={process.env.PUBLIC_URL + this.props.mainVideo.poster}>
-            </video>
         </div>
                         {/* {props.mainVideo.map((videoData, index) => <HeroCard key={index} duration={videoData.duration} poster={videoData.poster}/>)} */}
                     </div>

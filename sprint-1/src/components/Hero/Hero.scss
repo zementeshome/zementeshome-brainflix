@@ -1,0 +1,88 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__hero-video {
+        @include mobile {
+            width: 100%;
+            margin-top: -2.5rem;
+        }
+    }
+
+    &__hero-playbox {
+        @include mobile {
+            width: 16%;
+            height: 40px;
+            background-color: rgba(black, 0.4);
+            position: relative;
+            left: 4%;
+            top: -3.5rem;
+            border-radius: 5px 5px 5px 5px;
+        }
+    }
+
+    &__hero-playicon {
+        @include mobile {
+            position: relative;
+            left: 40%;
+            width: 30%;
+            top: 0.5rem;
+            opacity: none;
+        }
+
+    }
+
+    &__hero-timebox {
+        @include mobile {
+            width: 50%;
+            height: 40px;
+            background-color: rgba(black, 0.4);
+            position: relative;
+            left: 22.5%;
+            top: -5.97rem;
+            border-radius: 5px 5px 5px 5px;
+        }
+    }
+
+    &__hero-timeline {
+        @include mobile {
+            border-bottom: 5px solid black;
+            width: 80%;
+            margin: 1.1rem 1rem 0 1rem;
+            display: inline-block;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px; // fix this 
+
+        }
+    }
+
+    &__hero-volumebox {
+        @include mobile {
+            width: 22%;
+            height: 40px;
+            background-color: rgba(black, 0.4);
+            position: relative;
+            left: 75%;
+            top: -8.5rem;
+            border-radius: 5px 5px 5px 5px;
+        }
+    }
+
+    &__hero-fullscreenicon,
+    &__hero-volumeicon {
+        @include mobile {
+            width: 26%;
+            position: relative;
+            top: 0.6rem;
+            padding-right: 0.2rem;
+            padding-left: 0.7rem;
+    }
+}
+    &__hero-duration {
+        @include mobile {
+            display: none;
+        }
+    }
+}

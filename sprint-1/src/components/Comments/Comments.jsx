@@ -1,24 +1,20 @@
 import React from 'react'; 
+import CommentsCard from '../CommentsCard/CommentsCard';
 
 function Comments(props) {
 
         return (
             <section className="app__comments">
                 <div className="app__comments-displayed">
-                    {props.commentsArr.map((user, index) => (
-                        <div key={index}>
-                        <h3 className="app__comments-username">{user.name}</h3>
-                        <p className="app__comments-timestamp">{user.timestamp}</p>
-                        <p className="app__comments-comment">{user.comment}</p>
-                        </div>
-                    )
-                    )}
+                {props.mainVideo.map((users) => {
+                return <CommentsCard key={users.id} name={users.name} timestamp={users.timestamp} comment={users.comment} />
+                   }
+                )}
                 </div>
             </section>
         )
 
 }
-
 
 
     export default Comments

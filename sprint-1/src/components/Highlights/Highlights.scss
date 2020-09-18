@@ -1,0 +1,94 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__highlights {
+        @include mobile {
+            margin-left: 6vw;
+        }
+    }
+    &__highlights-header {
+        @include mobile {
+            font-family: 'Avenir Next';
+            font-weight: bold;
+            color: $primary-color;
+            font-size: 23px;
+            margin-top: -5.5rem;
+            line-height: 2rem;
+
+        }
+    }
+
+    &__highlights-wrap {
+        @include mobile {
+        display: flex;
+        margin-top: -1rem;
+    }
+}
+
+    &__highlights-channel {
+        @include mobile {
+        font-size: 18px;
+        font-family: 'Avenir Next Demi';
+        font-weight: bold;
+        padding-right: 0.8rem;
+    }
+}
+
+    &__highlights-date {
+        @include mobile {
+            font-size: 18px;
+            color: #AFAFAF;
+        }
+
+    }
+
+    &__highlights-container {
+        @include mobile {
+            display: flex;
+        }
+    }
+
+    // &__highlights-viewsicon,
+    &__highlights-likesicon {
+        @include mobile {
+            width: 7%;
+            padding-right: 0.8rem;
+        }
+    }
+
+    &__highlights-viewsicon {
+        @include mobile {
+            width: 9%;
+            padding-right: 0.8rem;
+        }
+    }
+
+    &__highlights-views,
+    &__highlights-likes {
+        @include mobile {
+            font-size: 16px;
+            padding-right: 1.5rem;
+        }
+    }
+
+    &__highlights-underline {
+        @include mobile {
+            width: 93%;
+            margin-right: 6vw;
+            border-bottom: 2px solid #E1E1E1;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__highlights-description {
+        @include mobile {
+            font-size: 12px;
+            margin-right: 6vw;
+            line-height: 1.3rem;
+        }
+    }
+}

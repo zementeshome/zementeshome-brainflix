@@ -4,7 +4,7 @@ import './Header.scss';
 function Header(props) {
     return (
     <header className="app__header">
-        <div class="app__header-container">
+        <div className="app__header-container">
         <img className ="app__header-logo" src={process.env.PUBLIC_URL + '/assets/Logo/Logo-brainflix.svg'} alt="brainflix logo" />
             <input className="app__header-search"type='text' placeholder="Search"/>
             <img className="app__header-searchicon"src={process.env.PUBLIC_URL + '/assets/Icons/SVG/Icon-search.svg'} alt="maginifying glass" />

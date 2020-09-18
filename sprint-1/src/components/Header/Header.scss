@@ -14,6 +14,10 @@ html,body
 
 .app {
 
+    // &__header {
+    //     @include mobile {
+    //     height: 200px;
+    // }
     // &__header-container {
         
     //     @include mobile {
@@ -69,7 +73,7 @@ html,body
             font-size: 15px;
             margin-left: 6vw;
             margin-top: -1.5rem;
-            padding-left: 5.3rem;
+            padding-left: 26vw;
             padding-top: 0.9rem;
         }
     }
@@ -78,7 +82,7 @@ html,body
         @include mobile {
             position: relative;
             top: -4.4rem;
-            left: 25%;
+            left: 25vw;
             width: 5%;
         }
     }
