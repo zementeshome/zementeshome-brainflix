@@ -6,6 +6,7 @@ $header-font-size: 24px;
 $footer-font-size: 14px;
 $breakpoint-mobile: 320px;
 $breakpoint-tablet: 768px;
+// $breakpoint-medium-desktop: 1024px;
 $breakpoint-desktop: 1200px;
 
 
@@ -22,6 +23,12 @@ $breakpoint-desktop: 1200px;
         @content;
     }
 }
+
+// @mixin medium-desktop {
+//     @media only screen and (min-width: 1024px) {
+//         @content;
+//     }
+// }
 
 @mixin desktop {
     @media only screen and (min-width: 1200px) {

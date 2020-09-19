@@ -13,12 +13,21 @@
             display: inline-block;
             margin-bottom: 0.5rem;
         }
+
+        @include tablet {
+            margin-left: -0.5vw;
+            width: 103%;
+        }
     }
 
     &__aside-videos {
         @include mobile {
             margin-left: 6vw;
             margin-right: 6vw;
+        }
+
+        @include tablet {
+            margin-left: 4vw;
         }
     }
 
@@ -54,10 +63,10 @@
             margin-left: 1rem;
             margin-right: -0.5rem; 
         }
-    }
 
-    &__channel-container {
-        @include mobile {
+        @include tablet {
+            font-size: 14px;
+            margin-right: 48vw;
         }
     }
 
@@ -70,6 +79,11 @@
                 margin-left: 45vw;
             
             }
+
+            @include tablet {
+                margin-left: 19vw;
+            }
         }
+
    
 }

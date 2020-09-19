@@ -10,6 +10,11 @@
             font-size: 20px;
             
         }
+
+        @include mobile {
+            margin-left: 4vw;
+            margin-top: 4rem;
+        }
     }
 
     &__form-photo {
@@ -20,6 +25,10 @@
             margin-left: 6vw;
             margin-top: -2rem;
         }
+
+        @include tablet {
+            margin-left: 4vw;
+        }
     }
 
     &__form-container {
@@ -27,6 +36,10 @@
             margin-left: 28vw;
             margin-top: -5rem;
             margin-bottom: 5rem;
+        }
+
+        @include tablet {
+            margin-left: 13vw;
         }
     }
 
@@ -46,8 +59,11 @@
             border: 2px solid #E1E1E1;
             background-color: #FAFAFA;
             margin-top: 0.3rem;
+        }
 
-
+        @include tablet {
+            height: 45px;
+            width: 65%;
         }
     }
 
@@ -56,6 +72,11 @@
             font-size: 14px;
             padding-left: 4vw;
             padding-top: 4vw;
+        }
+
+        @include tablet {
+            padding-left: 2vw;
+            padding-top: 1.6vw;
         }
     }
 
@@ -71,6 +92,13 @@
             width: 94%;
             margin-top: 1rem;
             font-family: 'Avenir'; /* font doesn't apply unless i repeat it here */
+        }
+
+        @include tablet {
+            width: 25%;
+            position: relative;
+            left: 68.5%;
+            top: -4.4rem;
         }
     }
 }

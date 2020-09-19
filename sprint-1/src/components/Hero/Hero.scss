@@ -6,7 +6,7 @@
 
     &__hero-videobox {
         @include tablet {
-            width: 768px;
+            width: 100%;
             background-color: black;
         }
     }
@@ -20,7 +20,7 @@
         @include tablet {
             display: flex;
             margin-left: 4.5vw;
-            width: 700px;
+            width: 91.3%;
             height: 390px;
             padding-bottom: 0;
             // height: 450px;

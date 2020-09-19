@@ -78,4 +78,18 @@ render() {
 }  
 }
 
+// let mediaQueryTablet = window.matchMedia('(min-width: 768px)')
+
+// function screenSize(e) {
+  
+//   if(e.matches) {
+//     /* the viewport is 768px wide or more*/
+//     this.sideVideo[0].channel.textContent = 'Bernice Lambert';
+//     this.sideVideo[1].channel.textContent = 'Bernard Patrick';
+//     this.sideVideo[2].channel.textContent = 'Lizzie Burton';
+//   }
+// }
+
+// mediaQueryTablet.addListener(screenSize)
+
 export default App;
