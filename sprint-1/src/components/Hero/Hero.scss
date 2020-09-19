@@ -4,10 +4,28 @@
 
 .app {
 
+    &__hero-videobox {
+        @include tablet {
+            width: 768px;
+            background-color: black;
+        }
+    }
+
     &__hero-video {
         @include mobile {
             width: 100%;
             margin-top: -2.5rem;
+        }
+
+        @include tablet {
+            display: flex;
+            margin-left: 4.5vw;
+            width: 700px;
+            height: 390px;
+            padding-bottom: 0;
+            // height: 450px;
+
+            
         }
     }
 
@@ -20,6 +38,11 @@
             left: 4%;
             top: -3.5rem;
             border-radius: 5px 5px 5px 5px;
+        }
+
+        @include tablet {
+            width: 8%;
+            left: 7%;
         }
     }
 
@@ -43,6 +66,11 @@
             left: 22.5%;
             top: -5.97rem;
             border-radius: 5px 5px 5px 5px;
+        }
+
+        @include tablet {
+            left: 17%;
+            width: 63%;
         }
     }
 
@@ -68,6 +96,12 @@
             top: -8.5rem;
             border-radius: 5px 5px 5px 5px;
         }
+
+        @include tablet {
+            width: 11%;
+            left: 82%;
+            height: 41.5px;
+        }
     }
 
     &__hero-fullscreenicon,
@@ -79,10 +113,25 @@
             padding-right: 0.2rem;
             padding-left: 0.7rem;
     }
+
+        @include tablet {
+            width: 24%;
+            padding-left: 0.8rem;
+        }
 }
     &__hero-duration {
         @include mobile {
             display: none;
         }
+
+        @include tablet {
+            font-size: 12px;
+            color: #FFFFFF;
+            padding-top: -0.5rem;
+            display: inline-flex;
+            
+            
+        }
     }
+
 }

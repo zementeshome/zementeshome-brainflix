@@ -15,7 +15,7 @@ class AsideCard extends React.Component {
         <p className="app__aside-channel">
                 {this.props.channel}
             </p>
-        </div>
+            </div>
     );
   }
 

@@ -13,11 +13,11 @@
 
     &__comments-line {
         @include mobile {
-            width: 100%;
+            width: 95%;
             margin-right: 6vw;
             border-bottom: 2px solid #E1E1E1;
             display: inline-block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
     }
 
@@ -39,13 +39,30 @@
     &__comments-username {
         @include mobile {
             font-size: 14px;
-            margin-left: 6vw;
+            margin-left: 5vw;
+            margin-top: 0.5rem;
+            width: 140px;
         }
     }
 
     &__comments-timestamp {
         @include mobile {
             font-size: 14px;
+            margin-top: 0.5rem;
+            margin-right: 6vw;
+            color: #AFAFAF; // fix this
+            
+        }
+    }
+
+    &__comments-comment {
+        @include mobile {
+            font-size: 13px;
+            margin-left: 20vw;
+            margin-bottom: 1rem;
+            margin-right: 7vw;
+            margin-top: -0.8rem;
+
         }
     }
 

@@ -9,7 +9,7 @@ function Form(props) {
                 <h2 className="app__form-header">3 Comments</h2>
                 <div className="app__form-section">
                     <img className="app__form-photo" src={process.env.PUBLIC_URL + props.userImage} alt="user icon"/>
-                    <div class="app__form-container">
+                    <div className="app__form-container">
                     <form className="app__form-comments" action='#'>
                         <label className="app__form-join" htmlFor="join">JOIN THE CONVERSATION</label><br />
                         <textarea name="comment" className="app__form-input" placeholder="Write a comment here"></textarea><br />
