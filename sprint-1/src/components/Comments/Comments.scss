@@ -1,0 +1,52 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__comments-displayed {
+        @include mobile {
+            margin-left: 6vw;
+            margin-top: -3rem;
+        }
+    }
+
+    &__comments-line {
+        @include mobile {
+            width: 100%;
+            margin-right: 6vw;
+            border-bottom: 2px solid #E1E1E1;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__comments-container {
+        @include mobile {
+            display: flex;
+        }
+    }
+
+    &__comments-icon {
+        @include mobile {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #E1E1E1;
+        }
+    }
+
+    &__comments-username {
+        @include mobile {
+            font-size: 14px;
+            margin-left: 6vw;
+        }
+    }
+
+    &__comments-timestamp {
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+}

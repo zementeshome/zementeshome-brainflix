@@ -4,11 +4,72 @@
 
 .app {
 
-    &__comments-header {
+    &__form-header {
         @include mobile {
             margin: 2rem 0 5rem 6vw;
             font-size: 20px;
             
+        }
+    }
+
+    &__form-photo {
+        @include mobile {
+            width: 55px;
+            height: 53px;
+            border-radius: 50%;
+            margin-left: 6vw;
+            margin-top: -2rem;
+        }
+    }
+
+    &__form-container {
+        @include mobile {
+            margin-left: 28vw;
+            margin-top: -5rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__form-join {
+        @include mobile {
+            font-size: 13px;
+            color: #AFAFAF;
+            font-weight: bold;
+        }
+    }
+
+    &__form-input {
+        @include mobile {
+            height: 95px;
+            width: 90%;
+            border-radius: 5px 5px 5px 5px;
+            border: 2px solid #E1E1E1;
+            background-color: #FAFAFA;
+            margin-top: 0.3rem;
+
+
+        }
+    }
+
+    &__form-input::placeholder {
+        @include mobile {
+            font-size: 14px;
+            padding-left: 4vw;
+            padding-top: 4vw;
+        }
+    }
+
+    &__form-submit {
+        @include mobile {
+            border-radius: 5px 5px 5px 5px;
+            border: 2px solid #0095FF;
+            background-color:  #0095FF;
+            font-weight: bold;
+            font-size: 15px;
+            color: #FFFFFF;
+            height: 50px;
+            width: 94%;
+            margin-top: 1rem;
         }
     }
 }

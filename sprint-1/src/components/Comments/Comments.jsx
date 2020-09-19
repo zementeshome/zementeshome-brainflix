@@ -1,5 +1,6 @@
 import React from 'react'; 
 import CommentsCard from '../CommentsCard/CommentsCard';
+import './Comments.scss'
 
 function Comments(props) {
 
