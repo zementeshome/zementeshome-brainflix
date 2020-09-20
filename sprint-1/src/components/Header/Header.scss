@@ -40,6 +40,11 @@ html,body
             width: 20%;
             margin-top: 0.7rem;
         }
+
+        @include desktop {
+            width: 10%;
+            margin-left: 14vw;
+        }
 }
 
     &__header-search {
@@ -62,6 +67,13 @@ html,body
             height: 50px;
             margin-left: 15vw;
         }
+
+        @include desktop {
+            width: 20%;
+            height: 43px;
+            margin-left: 30vw;
+
+        }
     }
 
     &__header-searchicon {
@@ -76,6 +88,11 @@ html,body
             width: 3%;
             left: -16.3rem;
             top: 0.4rem;
+        }
+
+        @include desktop {
+            width: 1.5%;
+            left: -17rem;
         }
     }  
 
@@ -105,6 +122,13 @@ html,body
             padding-top: 1rem;
             padding-left: 1.7rem;
         }
+
+        @include desktop {
+            height: 48px;
+            margin-left: 76vw;
+            margin-top: -4.2rem;
+            padding-top: 0.83rem;
+        }
     }
 
     &__header-buttonicon {
@@ -120,6 +144,12 @@ html,body
             width: 2.2%;
             top: -4.7rem;
         }
+
+        @include desktop {
+            left: 76.5vw;
+            width: 1.1%;
+            top: -4.6rem;
+        }
     }
 
     &__header-usericon {
@@ -132,10 +162,15 @@ html,body
             top: -3.2rem;
         }
         
-        @include mobile {
+        @include tablet {
             left: 90%;
             height: 55px;
             top: -3.4rem;
+        }
+
+        @include desktop {
+            left: 83.2%;
+            top: -3.2rem;
         }
     }
 
@@ -153,5 +188,10 @@ html,body
     @include tablet {
         padding-left: 6vw;
         font-size: 17px;
+    }
+
+    @include desktop {
+        padding-left: 3.5vw;
+        font-size: 15px;
     }
 }

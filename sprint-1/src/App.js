@@ -5,10 +5,6 @@ import Highlights from './components/Highlights/Highlights';
 import Comments from './components/Comments/Comments';
 import Form from './components/Form/Form';
 import Aside from './components/Aside/Aside';
-// import AsideCard from './components/AsideCard/AsideCard';
-// import CommentsCard from './components/CommentsCard/CommentsCard';
-// import HeroCard from './components/HeroCard/HeroCard';
-// import HighlightsCard from './components/Highlights/Highlights';
 
 class App extends React.Component {
 
@@ -64,9 +60,7 @@ render() {
       <Header userImage={this.state.userImage} />
       <main className="app__main">
         <Hero mainVideo={this.state.mainVideo}/>
-        {/* <HeroCard mainVideo={mainVideo}/> */}
          <Highlights mainVideo={this.state.mainVideo} />
-         {/* <HighlightsCard mainVideo={mainVideo}/> */}
          <Form userImage={this.state.userImage} />
          <div className="app__comments-container">
           <Comments mainVideo={this.state.mainVideo.commentsArr}/>

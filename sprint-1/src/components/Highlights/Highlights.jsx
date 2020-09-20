@@ -10,6 +10,7 @@ class Highlights extends React.Component {
         return (
 
             <section className="app__highlights">
+                 <span className="app__highlights-verticalline"></span>
                 <h1 className="app__highlights-header">
                     {this.props.mainVideo.title}
                 </h1>

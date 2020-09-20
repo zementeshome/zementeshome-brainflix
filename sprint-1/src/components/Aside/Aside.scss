@@ -4,6 +4,32 @@
 
 
 .app {
+    &__aside-section {
+
+        @include desktop {
+            width: 35%;
+            float: right;
+            margin-top: -52rem;
+        }
+    }
+
+    &__aside-vertical {
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        @include desktop {
+            display: flex;
+            border-left: 2px solid #E1E1E1;
+            height: 840px;
+            margin-left: 1.5vw;
+            margin-top: -52rem;
+        }
+    }
 
     &__aside-line {
         @include mobile {
@@ -17,6 +43,11 @@
         @include tablet {
             margin-left: -0.5vw;
             width: 103%;
+        }
+
+        @include desktop {
+            display: none;
+
         }
     }
 
@@ -39,6 +70,10 @@
             margin-top: 2rem;
             margin-bottom: 2.5rem;
     }
+
+        @include desktop {
+            font-size: 13px;
+        }
   }
 
     &__aside-container {
@@ -52,6 +87,11 @@
             height: 80px;
             border-radius: 5px 5px 5px 5px;
             margin-bottom: 30px;
+        }
+
+        @include desktop {
+            width: 100px;
+            height: 65px;
         }
     }
 
@@ -68,6 +108,12 @@
             font-size: 14px;
             margin-right: 48vw;
         }
+
+        @include desktop {
+            margin-right: 6.5vw;
+            font-size: 13px;
+            margin-top: 0.2rem;
+        }
     }
 
     &__aside-channel {
@@ -83,7 +129,15 @@
             @include tablet {
                 margin-left: 19vw;
             }
+
+            @include tablet {
+                font-size: 12.8px;
+                margin-left: 8vw;
+                margin-top: -3rem;
+            }
         }
+
+        
 
    
 }

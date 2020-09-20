@@ -12,6 +12,7 @@ function Comments(props) {
                    }
                 )}
                 </div>
+                <span className="app__comments-desktopline"></span>
             </section>
         )
 
