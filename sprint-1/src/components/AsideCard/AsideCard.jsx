@@ -7,15 +7,17 @@ class AsideCard extends React.Component {
     return (
         <div>
              <div className="app__aside-container">
-            <img className="app__aside-image"src={process.env.PUBLIC_URL + this.props.image} alt=""/>
-            <h4 className="app__aside-title">
+                <img className="app__aside-image"src={process.env.PUBLIC_URL + this.props.image} alt=""/>
+                <h4 className="app__aside-title">
                 {this.props.content}
             </h4>
         </div>
-        <p className="app__aside-channel">
+        <div className="app__aside-channelcontainer">
+            <p className="app__aside-channel">
                 {this.props.channel}
             </p>
-            </div>
+        </div>
+    </div>
     );
   }
 

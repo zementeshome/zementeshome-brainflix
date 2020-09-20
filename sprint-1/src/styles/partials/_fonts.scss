@@ -1,20 +1,27 @@
 @font-face {
     font-family: 'Avenir';
-    src: url(./../../components/Fonts/AvenirNextProLT/AlternativeFiles/Linotype-AvenirNextLTPro-Medium.ttf) format('truetype');
+    src: url(./../Fonts/AvenirNextProLT/AlternativeFiles/Linotype-AvenirNextLTPro-Medium.ttf) format('truetype');
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
+    font-family: 'Avenir Light';
+    src: url(./../Fonts/AvenirNextProLT/AlternativeFiles/Linotype-Avenir-NextLTPro.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Avenir Next Demi';
-    src: url(./../../components/Fonts/AvenirNextProLT/AlternativeFiles/Linotype-AvenirNextLT-ProDemi.ttf) format('truetype');
+    src: url(./../Fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(./../../components/Fonts/AvenirNextProLT/AlternativeFiles/Linotype-AvenirNextLTPro-Bold.ttf) format('truetype');
+    src: url(./../Fonts/AvenirNextProLT/AlternativeFiles/Linotype-AvenirNextLTPro-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }

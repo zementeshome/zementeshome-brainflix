@@ -4,16 +4,12 @@ $primary-color: #323232;
 $font-color: #ffffff;
 $header-font-size: 24px;
 $footer-font-size: 14px;
-$breakpoint-mobile: 320px;
-$breakpoint-tablet: 768px;
-// $breakpoint-medium-desktop: 1024px;
-$breakpoint-desktop: 1200px;
 
 
 // media queries
 
 @mixin mobile {
-    @media only screen and (min-width: 320px) {
+    @media only screen and (min-width: 320px)  {
         @content;
     }
 }
@@ -24,11 +20,6 @@ $breakpoint-desktop: 1200px;
     }
 }
 
-// @mixin medium-desktop {
-//     @media only screen and (min-width: 1024px) {
-//         @content;
-//     }
-// }
 
 @mixin desktop {
     @media only screen and (min-width: 1200px) {
