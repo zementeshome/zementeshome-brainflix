@@ -76,7 +76,7 @@
             height: 95px;
             width: 90%;
             border-radius: 5px 5px 5px 5px;
-            border: 2px solid #E1E1E1;
+            border: 2px solid $border-color;
             background-color: #FAFAFA;
             margin-top: 0.3rem;
         }
@@ -115,9 +115,9 @@
 
     &__form-submit {
         @include mobile {
-            border-radius: 5px 5px 5px 5px;
-            border: 2px solid #0095FF;
-            background-color:  #0095FF;
+            border-radius: $border-radius;
+            border: 2px solid $button;
+            background-color: $button;
             font-weight: bold;
             font-size: 15px;
             color: #FFFFFF;

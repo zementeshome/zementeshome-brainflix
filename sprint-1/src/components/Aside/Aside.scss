@@ -25,7 +25,7 @@
 
         @include desktop {
             display: flex;
-            border-left: 2px solid #E1E1E1;
+            border-left: 2px solid $border-color;
             height: 840px;
             margin-left: 1.5vw;
             margin-top: -52rem;
@@ -37,7 +37,7 @@
         @include mobile {
             width: 101%;
             margin-right: 6vw;
-            border-bottom: 2px solid #E1E1E1;
+            border-bottom: 2px solid $border-color;
             display: inline-block;
             margin-bottom: 0.5rem;
         }
@@ -90,7 +90,7 @@
         @include mobile {
             width: 130px;
             height: 80px;
-            border-radius: 5px 5px 5px 5px;
+            border-radius: $border-radius;
             margin-bottom: 30px;
         }
 

@@ -43,7 +43,7 @@
             position: relative;
             left: 4%;
             top: -3.5rem;
-            border-radius: 5px 5px 5px 5px;
+            border-radius: $border-radius;
         }
 
         @include tablet {
@@ -77,7 +77,7 @@
             position: relative;
             left: 22.5%;
             top: -5.97rem;
-            border-radius: 5px 5px 5px 5px;
+            border-radius: $border-radius;
         }
 
         @include tablet {
@@ -100,7 +100,7 @@
             margin: 1.1rem 1rem 0 1rem;
             display: inline-block;
             border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px; // fix this 
+            border-bottom-right-radius: 3px;
 
         }
 
@@ -117,7 +117,7 @@
             position: relative;
             left: 75%;
             top: -8.5rem;
-            border-radius: 5px 5px 5px 5px;
+            border-radius: $border-radius;
         }
 
         @include tablet {

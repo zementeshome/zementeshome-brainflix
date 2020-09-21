@@ -14,10 +14,6 @@ html,body
 
 .app {
 
-    // &__header {
-    //     @include mobile {
-    //     height: 200px;
-    // }
     &__header-container {
         
         @include tablet {
@@ -53,9 +49,9 @@ html,body
         display: flex;
         width: 87%;
         height: 48px;
-        border: 1.5px solid #E1E1E1;
+        border: 1.5px solid $border-color;
         background-color: #FAFAFA;
-        border-radius: 5px 5px 5px 5px;
+        border-radius: $border-radius;
         margin-left: 5.5vw;
         margin-bottom: 10px;
 
@@ -102,9 +98,9 @@ html,body
             display: flex;
             width: 68%;
             height: 48px;
-            border: 1px solid #0095FF;
-            background-color: #0095FF;
-            border-radius: 5px 5px 5px 5px;
+            border: 1px solid $button;
+            background-color: $button;
+            border-radius: $border-radius;
             font-weight: bold;
             color: #FFFFFF;
             font-size: 15px;

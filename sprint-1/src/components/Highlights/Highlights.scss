@@ -2,6 +2,8 @@
 
 @import '../../styles/partials/fonts';
 
+// font in body is 'Avenir' 
+
 .app {
     &__highlights-verticalline {
         
@@ -13,11 +15,6 @@
             display: none;
         }
 
-        // @include desktop {
-        //     border-right: 2px solid #E1E1E1;
-        //     height: 500px;
-        //     display: flex;
-        // }
     }
 
     &__highlights {
@@ -147,7 +144,7 @@
         @include mobile {
             width: 93%;
             margin-right: 6vw;
-            border-bottom: 2px solid #E1E1E1;
+            border-bottom: 2px solid $border-color;
             display: inline-block;
             margin-bottom: 0.5rem;
         }
