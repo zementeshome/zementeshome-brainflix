@@ -1,0 +1,144 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__form-header {
+        @include mobile {
+            margin: 2rem 0 5rem 6vw;
+            font-size: 20px;
+            
+        }
+
+        @include tablet {
+            margin-left: 4vw;
+            margin-top: 4rem;
+        }
+        
+        @include desktop {
+            margin-left: 12vw;
+            font-size: 15px;
+            margin-top: 3rem;
+        }
+    }
+
+    &__form-photo {
+        @include mobile {
+            width: 55px;
+            height: 53px;
+            border-radius: 50%;
+            margin-left: 6vw;
+            margin-top: -2rem;
+        }
+
+        @include tablet {
+            margin-left: 4vw;
+        }
+
+        @include desktop {
+            width: 50px;
+            height: 48px;
+            margin-left: 12vw;
+        }
+    }
+
+    &__form-container {
+        @include mobile {
+            margin-left: 28vw;
+            margin-top: -5rem;
+            margin-bottom: 5rem;
+        }
+
+        @include tablet {
+            margin-left: 13vw;
+        }
+
+        @include desktop {
+            margin-left: 17.5vw;
+        }
+    }
+
+    &__form-join {
+        @include mobile {
+            font-size: 13px;
+            color: #AFAFAF;
+            font-weight: bold;
+        }
+
+        @include desktop {
+            font-size: 11px;
+        }
+    }
+
+    &__form-input {
+        @include mobile {
+            height: 95px;
+            width: 90%;
+            border-radius: 5px 5px 5px 5px;
+            border: 2px solid $border-color;
+            background-color: #FAFAFA;
+            margin-top: 0.3rem;
+        }
+
+        @include tablet {
+            height: 45px;
+            width: 65%;
+        }
+
+        @include desktop {
+            width: 40%;
+            height: 40px;
+
+        }
+    }
+
+    &__form-input::placeholder {
+        @include mobile {
+            font-size: 14px;
+            padding-left: 4vw;
+            padding-top: 4vw;
+        }
+
+        @include tablet {
+            padding-left: 2vw;
+            padding-top: 1.6vw;
+        }
+
+        @include desktop {
+            padding-left: 1vw;
+            padding-top: 1vw;
+            font-size: 12px;
+        }
+
+    }
+
+    &__form-submit {
+        @include mobile {
+            border-radius: $border-radius;
+            border: 2px solid $button;
+            background-color: $button;
+            font-weight: bold;
+            font-size: 15px;
+            color: #FFFFFF;
+            height: 50px;
+            width: 94%;
+            margin-top: 1rem;
+            font-family: 'Avenir'; /* font doesn't apply unless i repeat it here */
+        }
+
+        @include tablet {
+            width: 25%;
+            position: relative;
+            left: 68.5%;
+            top: -4.4rem;
+        }
+
+        @include desktop {
+            width: 15%;
+            left: 42%;
+            height: 46px;
+            top: -4.2rem;
+        }
+    }
+}

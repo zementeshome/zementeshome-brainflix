@@ -1,0 +1,175 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__hero-videobox {
+        @include tablet {
+            width: 100%;
+            background-color: black;
+        }
+
+        @include desktop {
+            height: 450px;
+        }
+    }
+
+    &__hero-video {
+        @include mobile {
+            width: 100%;
+            margin-top: -2.5rem;
+        }
+
+        @include tablet {
+            display: flex;
+            margin-left: 4.5vw;
+            width: 91.3%;
+            height: 390px;
+            padding-bottom: 0;    
+        }
+
+        @include desktop {
+            height: 450px;
+        }
+
+    }
+
+    &__hero-playbox {
+        @include mobile {
+            width: 16%;
+            height: 40px;
+            background-color: rgba(black, 0.4);
+            position: relative;
+            left: 4%;
+            top: -3.5rem;
+            border-radius: $border-radius;
+        }
+
+        @include tablet {
+            width: 8%;
+            left: 7%;
+        }
+
+        @include desktop {
+            width: 3%;
+            left: 23%;
+            height: 35px;
+        }
+    }
+
+    &__hero-playicon {
+        @include mobile {
+            position: relative;
+            left: 40%;
+            width: 30%;
+            top: 0.5rem;
+            opacity: none;
+        }
+
+    }
+
+    &__hero-timebox {
+        @include mobile {
+            width: 50%;
+            height: 40px;
+            background-color: rgba(black, 0.4);
+            position: relative;
+            left: 22.5%;
+            top: -5.97rem;
+            border-radius: $border-radius;
+        }
+
+        @include tablet {
+            left: 17%;
+            width: 63%;
+        }
+
+        @include desktop {
+            width: 44%;
+            height: 35px;
+            left: 26.5%;
+            top: -5.7rem;
+        }
+    }
+
+    &__hero-timeline {
+        @include mobile {
+            border-bottom: 5px solid black;
+            width: 80%;
+            margin: 1.1rem 1rem 0 1rem;
+            display: inline-block;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+
+        }
+
+        @include desktop {
+            width: 85%;
+        }
+    }
+
+    &__hero-volumebox {
+        @include mobile {
+            width: 22%;
+            height: 40px;
+            background-color: rgba(black, 0.4);
+            position: relative;
+            left: 75%;
+            top: -8.5rem;
+            border-radius: $border-radius;
+        }
+
+        @include tablet {
+            width: 11%;
+            left: 82%;
+            height: 41.5px;
+        }
+
+        @include desktop {
+            left: 71%;
+            height: 35.5px;
+            top: -7.9rem;
+            width: 6%;
+        }
+    }
+
+    &__hero-fullscreenicon,
+    &__hero-volumeicon {
+        @include mobile {
+            width: 26%;
+            position: relative;
+            top: 0.6rem;
+            padding-right: 0.2rem;
+            padding-left: 0.7rem;
+    }
+
+        @include tablet {
+            width: 24%;
+            padding-left: 0.8rem;
+        }
+
+        @include desktop {
+            width: 18%;
+            padding-left: 1.2rem;
+        }
+}
+    &__hero-duration {
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            font-size: 12px;
+            color: #FFFFFF;
+            padding-top: -0.5rem;
+            display: inline-flex; 
+            
+        }
+
+        @include desktop {
+            font-size: 10.5px;
+        }
+    }
+
+}
