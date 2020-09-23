@@ -9,7 +9,7 @@ class Hero extends React.Component {
                 <section className="app__hero">
                     <div className="app__hero-container">
                     <div className="app__hero-videobox">
-                        <video className="app__hero-video" poster={process.env.PUBLIC_URL + this.props.mainVideo.poster}>
+                        <video className="app__hero-video" poster={process.env.PUBLIC_URL + this.props.mainVideo.image}>
                     </video>
                 </div>
                   <div className="app__hero-playbox">
