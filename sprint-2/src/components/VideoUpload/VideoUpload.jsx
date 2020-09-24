@@ -22,7 +22,7 @@ class VideoUpload extends React.Component {
             <h3 className="app__upload-header">Upload Video</h3>
             <span className="app__upload-line"></span>
             <p className="app__upload-video">VIDEO THUMBNAIL</p>
-            <img className="app__upload-thumbnail" src={process.env.PUBLIC_URL + '/assets/Images/Upload-video-preview.jpg'}></img>
+            <img className="app__upload-thumbnail" src={process.env.PUBLIC_URL + '/assets/Images/Upload-video-preview.jpg'} alt="man riding a bike"></img>
             <form className="app__upload-form">
                 <div className="app__upload-container">
                 <label className="app__upload-title" htmlFor="join">TITLE YOUR VIDEO</label><br />

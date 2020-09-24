@@ -33,10 +33,23 @@ class App extends React.Component {
       .then(response => {
         Axios.get('https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=10b750d1-c831-4923-a2a8-be05839d83de')
         .then(res => {
-          // console.log(response, res)
+          console.log(response, res)
 
-          // let time = new Date(res.data.timestamp)
-          // timestamp.innerText = time.toLocaleDateString();
+          
+          let time = new Date(res.data.timestamp)
+          res.data.timestamp = time.toLocaleDateString();
+
+          let commentsTime = new Date(res.data.comments[0].timestamp)
+          res.data.comments[0].timestamp= commentsTime.toLocaleDateString();
+          console.log(commentsTime)
+
+          let commentsTime2 = new Date(res.data.comments[1].timestamp)
+          res.data.comments[1].timestamp= commentsTime2.toLocaleDateString();
+          console.log(commentsTime2)
+
+          let commentsTime3 = new Date(res.data.comments[2].timestamp)
+          res.data.comments[2].timestamp= commentsTime3.toLocaleDateString();
+          console.log(commentsTime3)
 
           let mainVideo = res.data
           mainVideo.commentsArr = res.data.comments
@@ -53,17 +66,19 @@ class App extends React.Component {
           })
         })
       })
+      .catch(error => {
+        console.log(error)
+      })
     }
-
-    // function getDate() {
-    //   let time = document.querySelector('.comments__date')
-    //   time.firstChild.nodeValue = new Date().toLocaleDateString(undefined, {
-    //     month : '2-digit',  
-    //     day : '2-digit',
-    //     year : 'numeric'
-    //   })
-    // }
     
+  //  getDate = () => {
+  //   //   let time = document.querySelector('.app__comments-timestamp')
+  //   //   time.firstChild.nodeValue = new Date().toLocaleDateString(undefined, {
+  //   //     month : '2-digit',  
+  //   //     day : '2-digit',
+  //   //     year : 'numeric'
+  //   //   })
+  //   // } 
 
 render() { 
 
