@@ -31,10 +31,10 @@ class VideoUpload extends React.Component {
                 <textarea name="description" className="app__upload-descriptioninput" placeholder="Add a description of your video"></textarea><br />
                 </div>
                 <span className="app__upload-line"></span>
-                {/* <div className="app__upload-button"> */}
+                <div className="app__upload-button">
                 <button className="app__upload-publish">PUBLISH</button>
                 <button className="app__upload-cancel">CANCEL</button>
-                {/* </div> */}
+                </div>
             </form>
             </section>
         )
