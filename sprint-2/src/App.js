@@ -88,6 +88,8 @@ render() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home}></Route>
+        <Route path="/videoupload" render={routeProps => <VideoUpload {...routeProps} /> } >
+          </Route>
          <Route path="/:id" component={Home}>
           {/* <div className="app"> */}
             {/* <Header userImage={this.state.userImage} />
@@ -102,12 +104,7 @@ render() {
             </main>
           </div> */}
           </Route>
-          {/* <Route path="/videoupload"
-            render={routeProps => 
-              <VideoUpload {...routeProps} /> } >
-          </Route> */}
-          <Route path="/videoupload" component={VideoUpload}></Route>
-          <Route path="/videodetails/:id" component={VideoDetails}></Route>
+          {/* <Route path="/videodetails/:id" component={VideoDetails}></Route> */}
     </Switch>
   </Router>
   );

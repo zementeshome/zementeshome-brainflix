@@ -17,7 +17,7 @@ class VideoUpload extends React.Component {
 
         return (
             <section className="app__upload">
-                <Header src={process.env.PUBLIC_URL + {userImage}}/>
+                <Header userImage={process.env.PUBLIC_URL + userImage}/>
             <span className="app__upload-bar"></span>
             <h3 className="app__upload-header">Upload Video</h3>
             <span className="app__upload-line"></span>
