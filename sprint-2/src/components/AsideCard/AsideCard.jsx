@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class AsideCard extends React.Component {
     render() {
 
 
     return (
+        <Link to={`/${this.props.commentId}`}>
         <div>
              <div className="app__aside-container">
                 <img className="app__aside-image"src={process.env.PUBLIC_URL + this.props.image} alt=""/>
@@ -18,6 +20,7 @@ class AsideCard extends React.Component {
             </p>
         </div>
     </div>
+    </Link>
     );
   }
 
