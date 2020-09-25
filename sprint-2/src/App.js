@@ -1,5 +1,5 @@
 import React from 'react';
-import Axios from 'axios';
+// import Axios from 'axios';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 // import Header from './components/Header/Header';
 // import Hero from './components/Hero/Hero';
@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 // import Comments from './components/Comments/Comments';
 // import Aside from './components/Aside/Aside';
 import VideoUpload from './components/VideoUpload/VideoUpload';
-import VideoDetails from './components/VideoDetails/VideoDetails';
+// import VideoDetails from './components/VideoDetails/VideoDetails';
 import Home from './components/Home/Home';
   
 
@@ -104,7 +104,6 @@ render() {
             </main>
           </div> */}
           </Route>
-          {/* <Route path="/videodetails/:id" component={VideoDetails}></Route> */}
     </Switch>
   </Router>
   );

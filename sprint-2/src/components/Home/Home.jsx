@@ -36,6 +36,9 @@ class Home extends Component {
             let time = new Date(res.data.timestamp)
             res.data.timestamp = time.toLocaleDateString();
 
+            // let asideTime = new Date(response.data.timestamp)
+            // response.data.timestamp = asideTime.toLocaleDateString();
+
             let commentsTime = new Date(res.data.comments[0].timestamp)
             res.data.comments[0].timestamp = commentsTime.toLocaleDateString();
             console.log(commentsTime)
@@ -70,13 +73,13 @@ class Home extends Component {
 
   componentDidUpdate(prevProps) {
     console.log(prevProps);
-    if (this.props && prevProps && prevProps.match && prevProps.match.params.id != this.props.match.params.id) {
-      console.log(this.props.match,'inside th if')
+    if (this.props && prevProps && prevProps.match && prevProps.match.params.id !== this.props.match.params.id) {
       Axios.get(`https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=10b750d1-c831-4923-a2a8-be05839d83de`)
         .then(response => {
           console.log(response);
           this.setState({
-            mainVideo: {...response.data, commentsArr: response.data.comments}, ...this.state
+            ...this.state,
+            mainVideo: {...response.data, commentsArr: response.data.comments},
           })
         })
     }
