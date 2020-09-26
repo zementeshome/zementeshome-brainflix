@@ -4,6 +4,12 @@
 
 .app {
 
+    &__comments {
+        @include desktop {
+            width: 67%;
+        }
+    }
+
     &__comments-displayed {
         @include mobile {
             margin-left: 6vw;
@@ -34,7 +40,7 @@
         }
 
         @include desktop {
-            width: 62%;
+            width: 99%;
         }
     }
 
@@ -108,7 +114,6 @@
 
         @include desktop {
             margin-left: 5.5vw;
-            margin-right: 45vw;
             font-size: 12px;
         }
     }
@@ -127,7 +132,7 @@
             display: inline-block;
             border-bottom: 2px solid $border-color;
             margin-bottom: 1rem;
-            width: 54.5%;
+            width: 81.5%;
             margin-left: 12vw;
         }
     }   

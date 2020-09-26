@@ -31,6 +31,9 @@
 
         @include desktop {
             height: 450px;
+            object-fit: cover;
+            width: 60%;
+            margin-left: 20vw;
         }
 
     }

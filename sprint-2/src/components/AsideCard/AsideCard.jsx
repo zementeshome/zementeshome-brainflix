@@ -6,7 +6,7 @@ class AsideCard extends React.Component {
     render() {
 
     return (
-        <Link to={`/${this.props.commentId}`}>
+        <Link to={`/${this.props.commentId}`} style={{textDecoration: 'none'}}>
         <div>
              <div className="app__aside-container">
                 <img className="app__aside-image"src={process.env.PUBLIC_URL + this.props.image} alt=""/>
