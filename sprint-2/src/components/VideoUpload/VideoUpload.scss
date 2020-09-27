@@ -10,8 +10,9 @@
             border-bottom: 1px solid $border-color;
             display: inline-block;
             margin-bottom: 0.2rem;
+            position: relative;
+            top: -3rem;
         }
-
     }
 
     &__upload-header {
@@ -237,7 +238,7 @@
             width: 8%;
         }
 
-        @include tablet {
+        @include desktop {
             width: 2%;
         }
     }

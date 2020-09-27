@@ -17,8 +17,11 @@
 
     &__hero-video {
         @include mobile {
+            // display: flex;
+            // justify-content: center;
             width: 100%;
             margin-top: -2.5rem;
+            object-fit: cover;
         }
 
         @include tablet {
@@ -31,9 +34,8 @@
 
         @include desktop {
             height: 450px;
-            object-fit: cover;
             width: 60%;
-            margin-left: 20vw;
+            margin-left: 19vw;
         }
 
     }
@@ -56,7 +58,7 @@
 
         @include desktop {
             width: 3%;
-            left: 23%;
+            left: 21%;
             height: 35px;
         }
     }
@@ -89,9 +91,9 @@
         }
 
         @include desktop {
-            width: 44%;
+            width: 45%;
             height: 35px;
-            left: 26.5%;
+            left: 25%;
             top: -5.7rem;
         }
     }

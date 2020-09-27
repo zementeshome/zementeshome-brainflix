@@ -108,7 +108,7 @@
             font-size: 13px;
             margin-top: 0.5rem;
             margin-left: 1rem;
-            margin-right: -0.5rem; 
+            margin-right: -0.8rem; 
         }
 
         @include tablet {
@@ -117,7 +117,7 @@
         }
 
         @include desktop {
-            margin-right: 6.5vw;
+            margin-right: 6vw;
             font-size: 13px;
             margin-top: 0.2rem;
         }
@@ -141,7 +141,7 @@
 
             @include desktop {
                 font-size: 12.8px;
-                margin-left: 8vw;
+                margin-left: 8.2vw;
                 margin-top: -3rem;
             }
         }

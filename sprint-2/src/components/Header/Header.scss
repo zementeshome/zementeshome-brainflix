@@ -38,7 +38,7 @@ html,body
         }
 
         @include desktop {
-            width: 50%;
+            width: 42%;
             margin-left: 14vw;
         }
 }
@@ -113,7 +113,7 @@ html,body
         @include tablet {
             width: 100px;
             padding-left: 2vw;
-            margin-left: 78vw;
+            margin-left: 74.5vw;
             margin-top: -4.5rem;
             height: 53px;
             padding-top: 1rem;
@@ -122,7 +122,7 @@ html,body
 
         @include desktop {
             height: 48px;
-            margin-left: 76vw;
+            margin-left: 74.5vw;
             margin-top: -4.2rem;
             padding-top: 0.83rem;
         }
@@ -137,13 +137,13 @@ html,body
         }
 
         @include tablet {
-            left: 79vw;
+            left: 75.5vw;
             width: 2.2%;
             top: -4.7rem;
         }
 
         @include desktop {
-            left: 76.5vw;
+            left: 75vw;
             width: 1.1%;
             top: -4.6rem;
         }
@@ -160,13 +160,13 @@ html,body
         }
         
         @include tablet {
-            left: 90%;
+            left: 88%;
             height: 55px;
             top: -3.4rem;
         }
 
         @include desktop {
-            left: 83.2%;
+            left: 82%;
             top: -3.2rem;
         }
     }
