@@ -33,7 +33,7 @@ class Home extends Component {
             console.log(response, res)
 
             // timestamp for video playing 
-            
+
             let time = new Date(res.data.timestamp)
             res.data.timestamp = time.toLocaleDateString();
 
@@ -90,15 +90,22 @@ class Home extends Component {
             let nextVideoComment3 = new Date(response.data.comments[2].timestamp)
             response.data.comments[2].timestamp = nextVideoComment3.toLocaleDateString();
 
-            // let mainVideo2 = response.data
-            // mainVideo2.commentsArr = response.data.comments
+            // let config = { }
+            // if(response.data.id !=""){
+            // config.id = response.data.id; }
 
-            // const mainVideoIndex2 = response.data.findIndex(video =>
-            //   video.id === mainVideo2.id)
+            // config.comment = form.comment.value;
+        //     let mainVideo2 = response.data
+        //     mainVideo2.commentsArr = response.data.comments
 
-            // if (mainVideoIndex2 > -1) {
-            //   response.data.splice(mainVideoIndex2, 1)
+        //     const mainVideoIndex2 = response.data.findIndex(video =>
+        //       video.id === mainVideo2.id)
+
+        //     if (mainVideoIndex2 > -1) {
+        //       response.data.splice(mainVideoIndex2, 1)
         // }
+  
+        
           console.log(response);
           this.setState({
             ...this.state,
@@ -107,6 +114,10 @@ class Home extends Component {
         })
         .catch(error => {
           console.log(error)
+          // let urlId = response.data.id 
+          // if (error.response.data.id == 400) {
+            // console.log("No video with that id exists")
+          // }
         })
     }
   }
@@ -131,7 +142,7 @@ class Home extends Component {
           <div className="app__comments-container">
             <Comments mainVideo={this.state.mainVideo.commentsArr} />
           </div>
-          <Aside sideVideo={this.state.sideVideo} />
+          <Aside sideVideo={this.state.sideVideo} mainVideo={this.state.mainVideo} />
         </main>
       </div>
     )

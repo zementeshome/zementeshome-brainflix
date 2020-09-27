@@ -10,7 +10,14 @@
         @include desktop {
             width: 35%;
             float: right;
-            margin-top: -52rem;
+            // margin-top: rem;
+        }
+    }
+
+    &__aside-videos {
+        @include desktop {
+            height: 833px;
+            margin-top: -54rem;
         }
     }
 
@@ -27,9 +34,10 @@
         @include desktop {
             display: flex;
             border-left: 2px solid $border-color;
-            height: 840px;
+            height: 870px;
+            // max-height: 840px;
             margin-left: 1.5vw;
-            margin-top: -52rem;
+            margin-top: -54.5rem;
         }
     }
 
@@ -78,6 +86,8 @@
 
         @include desktop {
             font-size: 13px;
+            margin-bottom: 4rem;
+            margin-top: 3rem;
         }
   }
 

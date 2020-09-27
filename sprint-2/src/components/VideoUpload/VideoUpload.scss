@@ -20,11 +20,13 @@
             font-family: 'Avenir Next';
             margin-left: 6vw;
             font-size: 25px;
+            margin-top: -1.5rem;
         }
 
         @include tablet {
             font-size: 35px;
             margin-left: 4.8vw;
+            margin-top: -1rem;
         }
 
         @include desktop {

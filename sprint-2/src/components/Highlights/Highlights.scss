@@ -50,6 +50,7 @@
         @include desktop {
             margin-top: -5rem;
             font-size: 30px;
+            width: 700px;
         }
     }
 
@@ -62,6 +63,11 @@
         @include tablet {
         margin-top: -1.5rem; 
     }   
+
+        @include desktop {
+            width: 700px;
+            margin-right: 10rem;
+        }
 }
 
     &__highlights-channel {

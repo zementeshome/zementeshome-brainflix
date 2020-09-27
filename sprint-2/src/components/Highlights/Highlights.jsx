@@ -34,6 +34,7 @@ class Highlights extends React.Component {
                     <p className="app__highlights-description">
                     {this.props.mainVideo.description}
                     </p>
+                    {this.props.mainVideo.id}
             </section>
         )
     }
