@@ -10,14 +10,18 @@
         @include desktop {
             width: 35%;
             float: right;
-            // margin-top: rem;
         }
+    }
+
+    &__aside-div {
+        position: relative;
     }
 
     &__aside-videos {
         @include desktop {
-            height: 833px;
-            margin-top: -54rem;
+            height: 800px;
+            position: relative;
+            margin-top: -49.5rem;
         }
     }
 
@@ -34,10 +38,9 @@
         @include desktop {
             display: flex;
             border-left: 2px solid $border-color;
-            height: 870px;
-            // max-height: 840px;
-            margin-left: 1.5vw;
-            margin-top: -54.5rem;
+            height: 840px;
+            margin-left: 2vw;
+            margin-top: -51.5rem;
         }
     }
 
@@ -86,8 +89,8 @@
 
         @include desktop {
             font-size: 13px;
-            margin-bottom: 4rem;
-            margin-top: 3rem;
+            margin-bottom: 2rem;
+            margin-top: 0;
         }
   }
 
@@ -145,6 +148,14 @@
             
             }
 
+            @include mobile-medium {
+                margin-left: 39vw;
+            }
+
+            @include mobile-large {
+                margin-left: 35vw;
+            }
+
             @include tablet {
                 margin-left: 19vw;
             }
@@ -156,7 +167,4 @@
             }
         }
 
-        
-
-   
 }

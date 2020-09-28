@@ -20,7 +20,8 @@ class AsideCard extends React.Component {
             </p>
         </div>
     </div>
-    </Link>
+</Link>
+
     );
   }
 

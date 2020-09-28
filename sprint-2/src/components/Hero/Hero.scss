@@ -17,8 +17,6 @@
 
     &__hero-video {
         @include mobile {
-            // display: flex;
-            // justify-content: center;
             width: 100%;
             margin-top: -2.5rem;
             object-fit: cover;
@@ -67,7 +65,7 @@
         @include mobile {
             position: relative;
             left: 40%;
-            width: 30%;
+            max-width: 32%;
             top: 0.5rem;
             opacity: none;
         }
@@ -109,8 +107,12 @@
 
         }
 
+        @include tablet {
+            width: 84%;
+        }
+
         @include desktop {
-            width: 85%;
+            width: 88%;
         }
     }
 
@@ -142,7 +144,7 @@
     &__hero-fullscreenicon,
     &__hero-volumeicon {
         @include mobile {
-            width: 26%;
+            max-width: 26%;
             position: relative;
             top: 0.6rem;
             padding-right: 0.2rem;

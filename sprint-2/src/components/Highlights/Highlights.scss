@@ -5,17 +5,6 @@
 // font in body is 'Avenir' 
 
 .app {
-    &__highlights-verticalline {
-        
-        @include mobile {
-            display: none;
-        }
-
-        @include tablet {
-            display: none;
-        }
-
-    }
 
     &__highlights {
         @include mobile {

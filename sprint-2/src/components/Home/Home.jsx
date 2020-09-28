@@ -30,7 +30,6 @@ class Home extends Component {
       .then(response => {
         Axios.get('https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=10b750d1-c831-4923-a2a8-be05839d83de')
           .then(res => {
-            console.log(response, res)
 
             // timestamp for video playing 
 
@@ -48,17 +47,9 @@ class Home extends Component {
             let commentsTime3 = new Date(res.data.comments[2].timestamp)
             res.data.comments[2].timestamp = commentsTime3.toLocaleDateString();
 
-            // removes video playing from next video array
-
             let mainVideo = res.data
             mainVideo.commentsArr = res.data.comments
-            
-            const mainVideoIndex = response.data.findIndex(video =>
-              video.id === mainVideo.id)
 
-            if (mainVideoIndex > -1) {
-              response.data.splice(mainVideoIndex, 1)
-            }
             this.setState({
               mainVideo: mainVideo,
               sideVideo: response.data
@@ -71,8 +62,6 @@ class Home extends Component {
   }
 
   componentDidUpdate(prevProps) {
-
-    // if the current video is not equal to the video being clicked then display in video player
 
     if (this.props && prevProps && prevProps.match && prevProps.match.params.id !== this.props.match.params.id) {
       Axios.get(`https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=10b750d1-c831-4923-a2a8-be05839d83de`)
@@ -89,45 +78,17 @@ class Home extends Component {
 
             let nextVideoComment3 = new Date(response.data.comments[2].timestamp)
             response.data.comments[2].timestamp = nextVideoComment3.toLocaleDateString();
-
-            // let config = { }
-            // if(response.data.id !=""){
-            // config.id = response.data.id; }
-
-            // config.comment = form.comment.value;
-        //     let mainVideo2 = response.data
-        //     mainVideo2.commentsArr = response.data.comments
-
-        //     const mainVideoIndex2 = response.data.findIndex(video =>
-        //       video.id === mainVideo2.id)
-
-        //     if (mainVideoIndex2 > -1) {
-        //       response.data.splice(mainVideoIndex2, 1)
-        // }
   
-        
-          console.log(response);
           this.setState({
             ...this.state,
             mainVideo: {...response.data, commentsArr: response.data.comments},
           })
         })
         .catch(error => {
-          console.log(error)
-          // let urlId = response.data.id 
-          // if (error.response.data.id == 400) {
-            // console.log("No video with that id exists")
-          // }
+          console.log(error, "No video with that id exists")
         })
     }
   }
-
-  // removeItem(index) {
-
-  //   this.setState({
-  //     sideVideo: this.state.sideVideo.filter((x, i) => i != index })
-  //   })
-  // }
 
   render() {
 

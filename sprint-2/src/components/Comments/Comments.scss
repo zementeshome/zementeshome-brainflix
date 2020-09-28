@@ -47,6 +47,7 @@
     &__comments-container {
         @include mobile {
             display: flex;
+            flex-wrap: wrap;
         }
     }
 
@@ -103,7 +104,10 @@
             font-size: 13px;
             margin: -0.8rem 7vw 1rem 20vw;
             font-family: 'Avenir Light';
+        }
 
+        @include mobile-medium {
+            margin-left: 18vw;
         }
 
         @include tablet {
