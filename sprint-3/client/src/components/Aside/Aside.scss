@@ -1,0 +1,140 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+
+.app {
+
+    &__aside-line {
+
+        @include mobile {
+            width: 101%;
+            margin-right: 6vw;
+            border-bottom: 2px solid $border-color;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        @include tablet {
+            margin-left: -0.5vw;
+            width: 103%;
+        }
+
+        @include desktop {
+            display: none;
+
+        }
+    }
+
+    &__aside-videos {
+
+        @include mobile {
+            margin-left: 6vw;
+            margin-right: 6vw;
+        }
+
+        @include tablet {
+            margin-left: 4vw;
+        }
+
+        @include desktop {
+            margin-left: 2vw;
+            margin-top: 2rem;
+        }
+    }
+
+    &__aside-header {
+
+        @include mobile {
+            font-size: 16px;
+            color: #AFAFAF;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+    }
+
+        @include desktop {
+            font-size: 12px;
+            margin-bottom: 2rem;
+            margin-top: 0;
+            font-family: 'Avenir Next Demi';
+        }
+  }
+
+    &__aside-container {
+        display: flex;
+    }
+
+
+    &__aside-image {
+
+        @include mobile {
+            width: 130px;
+            height: 80px;
+            border-radius: $border-radius;
+            margin-bottom: 30px;
+        }
+
+        @include desktop {
+            width: 100px;
+            height: 65px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__aside-title {
+
+        @include mobile {
+            display: flex;
+            font-family: 'Avenir Next Demi';
+            font-size: 13px;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+            margin-right: -0.8rem; 
+        }
+
+        @include tablet {
+            font-size: 14px;
+            margin-right: 48vw;
+        }
+
+        @include desktop {
+            margin-right: 0;
+            font-size: 13px;
+            margin-top: 0.2rem;
+            width: 165px;
+        }
+    }
+
+    &__aside-channel {
+        
+            @include mobile {
+                display: flex;
+                font-size: 14px;
+                margin-top: -3.5rem;
+                margin-bottom: 30px;
+                margin-left: 45vw;
+                font-family: 'Avenir Light';
+            
+            }
+
+            @include mobile-medium {
+                margin-left: 39vw;
+            }
+
+            @include mobile-large {
+                margin-left: 35vw;
+            }
+
+            @include tablet {
+                margin-left: 19vw;
+            }
+
+            @include desktop {
+                font-size: 12.8px;
+                margin-left: 8.2vw;
+                margin-top: -3rem;
+            }
+        }
+
+}

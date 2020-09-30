@@ -1,0 +1,40 @@
+// variables 
+
+$primary-color: #323232;
+$border-color: #E1E1E1;
+$button: #0095FF;
+$border-radius: 5px 5px 5px 5px;
+
+
+// media queries
+
+@mixin mobile {
+    @media only screen and (min-width: 320px)  {
+        @content;
+    }
+}
+
+@mixin mobile-medium {
+    @media only screen and (min-width: 375px) {
+        @content;
+    }
+}
+
+@mixin mobile-large {
+    @media only screen and (min-width: 425px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}

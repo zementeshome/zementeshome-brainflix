@@ -1,0 +1,28 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__main-div {
+    @include desktop {
+        display: flex;
+        // flex-direction: row;
+    }
+  }
+
+  &__aside-left {
+      @include desktop {
+
+          width: 65%;
+      }
+  }
+
+  &__aside-right {
+      @include desktop {
+          width: 35%;
+          border-left: 2px solid #e1e1e1;
+          margin-top: -6.8rem;
+      }
+  }
+}

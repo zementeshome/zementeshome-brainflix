@@ -1,0 +1,146 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.app {
+
+    &__comments {
+        @include desktop {
+            width: 67%;
+        }
+    }
+
+    &__comments-displayed {
+        @include mobile {
+            margin-left: 6vw;
+            margin-top: -3rem;
+        }
+
+        @include tablet {
+            margin-top: -8rem;
+            margin-left: 4vw;
+        }
+
+        @include desktop {
+            margin-left: 12vw;
+        }
+    }
+
+    &__comments-line {
+        @include mobile {
+            width: 95%;
+            margin-right: 6vw;
+            border-bottom: 2px solid $border-color;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        @include tablet {
+            width: 96%;
+        }
+
+        @include desktop {
+            width: 168%;
+        }
+    }
+
+    &__comments-container {
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__comments-icon {
+        @include mobile {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: $border-color;
+        }
+    }
+
+    &__comments-username {
+
+        @include mobile {
+            font-size: 14px;
+            margin-left: 5vw;
+            margin-top: 0.5rem;
+            width: 140px;
+        }
+
+        @include tablet {
+            margin-left: 2vw;
+        }
+
+        @include desktop {
+            font-size: 13px;
+        }
+
+    }
+
+    &__comments-timestamp {
+        @include mobile {
+            font-size: 14px;
+            margin-top: 0.5rem;
+            margin-right: 6vw;
+            font-family: 'Avenir Light';
+            color: #AFAFAF; 
+            
+        }
+
+        @include tablet {
+            margin-left: -2vw;
+        }
+
+        @include desktop {
+            font-size: 13px;
+            margin-left: -1.5vw;
+        }
+    }
+
+    &__comments-comment {
+        @include mobile {
+            font-size: 13px;
+            margin: -0.8rem 7vw 1rem 20vw;
+            font-family: 'Avenir Light';
+        }
+
+        @include mobile-medium {
+            margin-left: 18vw;
+        }
+
+        @include tablet {
+            margin-left: 8.5vw;
+            line-height: 1.2rem;
+            margin-right: 12vw;
+        }
+
+        @include desktop {
+            margin-left: 5.5vw;
+            font-size: 12px;
+            margin-right: -10rem;
+        }
+    }
+
+    &__comments-desktopline {
+
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
+
+        @include desktop {
+            display: inline-block;
+            border-bottom: 2px solid $border-color;
+            margin-bottom: 1rem;
+            width: 122%;
+            margin-left: 12vw;
+        }
+    }   
+        
+
+}
