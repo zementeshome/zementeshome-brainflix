@@ -7,14 +7,12 @@
     &__main-div {
     @include desktop {
         display: flex;
-        // flex-direction: row;
     }
   }
 
   &__aside-left {
       @include desktop {
-
-          width: 65%;
+        width: 65%;
       }
   }
 
