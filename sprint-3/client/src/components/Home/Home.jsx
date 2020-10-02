@@ -17,10 +17,16 @@ class Home extends Component {
     sideVideo: []
   }
 
+  // https://project-2-api.herokuapp.com/videos?api_key=10b750d1-c831-4923-a2a8-be05839d83de
+
+  // https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=10b750d1-c831-4923-a2a8-be05839d83de
+
+  // `https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=10b750d1-c831-4923-a2a8-be05839d83de`
+
   componentDidMount() {
-    Axios.get('https://project-2-api.herokuapp.com/videos?api_key=10b750d1-c831-4923-a2a8-be05839d83de')
+    Axios.get('/videos')
       .then(response => {
-        Axios.get('https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=10b750d1-c831-4923-a2a8-be05839d83de')
+        Axios.get('/videos/1af0jruup5gu')
           .then(res => {
             // timestamp for video playing 
             let time = new Date(res.data.timestamp)
@@ -40,7 +46,7 @@ class Home extends Component {
 
             this.setState({
               mainVideo: mainVideo,
-              sideVideo: response.data
+              sideVideo: response.data.sideVideo
             })
           })
         })
@@ -51,7 +57,7 @@ class Home extends Component {
 
   componentDidUpdate(prevProps) {
     if (this.props && prevProps && prevProps.match && prevProps.match.params.id !== this.props.match.params.id) {
-      Axios.get(`https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=10b750d1-c831-4923-a2a8-be05839d83de`)
+      Axios.get(`/videos/${this.props.match.params.id}`)
         .then(response => {
             let nextVideoTime = new Date(response.data.timestamp)
             response.data.timestamp = nextVideoTime.toLocaleDateString();

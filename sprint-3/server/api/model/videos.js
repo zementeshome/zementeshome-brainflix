@@ -17,7 +17,6 @@ class Video {
        video.id == videoId
        ))
     }
-
     // going through array and trying to find the video with the id the function is recieving
 
     getVideos = () => {

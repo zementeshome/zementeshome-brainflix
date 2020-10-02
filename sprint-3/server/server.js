@@ -4,11 +4,10 @@ const Video = require('./api/model/videos');
 const VideoData = new Video();
 // const routes = require('./routes';
 
-// app.use((req, resp, next) => {
-//     resp.setHeader('Access-Control-Allow-Origin', '*');
-    
-//     next();
-//     }); // middleware to set the response header
+app.use((req, resp, next) => {
+    resp.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+    }); // middleware to set the response header
 
 app.get('/', function(req, res) {
     res.send('Hello World!')
