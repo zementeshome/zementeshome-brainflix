@@ -10,7 +10,7 @@ function Form(props) {
                         <div className="app__form-container">
                             <form className="app__form-comments" action='#'>
                             <label className="app__form-join" htmlFor="join">JOIN THE CONVERSATION</label><br />
-                            <textarea name="comment" className="app__form-input" placeholder="Write comment here"></textarea><br />
+                            <textarea name="comment" className="app__form-input" placeholder="Write comment here" style={{fontFamily: 'Avenir', fontSize: '12px'}}></textarea><br />
                             <input type="submit" value="COMMENT" className="app__form-submit"></input>
                         </form>
                     </div>
