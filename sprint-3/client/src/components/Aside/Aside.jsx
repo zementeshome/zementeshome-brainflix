@@ -2,6 +2,7 @@ import React from 'react';
 import AsideCard from './../AsideCard/AsideCard';
 import './Aside.scss';
 
+
  function Aside(props) {
         return (
             <aside className="app__aside-section">

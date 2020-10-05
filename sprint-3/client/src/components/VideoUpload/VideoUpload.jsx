@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import './VideoUpload.scss';
 import axios from 'axios';
+import uuidv4 from 'uuid/v4';
 
 class VideoUpload extends React.Component {
 
@@ -14,44 +15,37 @@ class VideoUpload extends React.Component {
         const target = event.target;
         const name = target.name;
         const value = target.value;
-
         this.setState({
             [name]: value
-
         })
     }
 
     submit = (event) => {
         event.preventDefault();
+        let id = uuidv4()
         const payload = {
+            id: id,
             title: this.state.title,
             channel: this.state.channel,
             image: process.env.PUBLIC_URL + '/assets/Images/Upload-video-preview.jpg'
         }
-        console.log('before post');
         axios({
             url: 'http://localhost:8022/videos',
             method: 'POST',
             data: payload,
         })
-            .then(() => {
-                this.setState({
-                    title: '',
-                    channel: ''
-                })
-                console.log('data was sent')
+          .then(() => {
+            this.setState({
+            title: '',
+            channel: ''
             })
-            .catch((error) => {
-                console.log(error)
-            })
+        })
+          .catch((error) => {
+            console.log(error)
+        })
     };
 
-
-
     render() {
-
-        console.log('state', this.state)
-
         let userImage = '/assets/Images/Mohan-muruge.jpg'
         return (
             <section className="app__upload">
@@ -71,7 +65,7 @@ class VideoUpload extends React.Component {
                     <span className="app__upload-line"></span>
                     <div className="app__upload-button">
                         <button onClick={this.submit} className="app__upload-publish">PUBLISH</button>
-                        <   button className="app__upload-cancel">CANCEL</button>
+                        <button className="app__upload-cancel">CANCEL</button>
                     </div>
                 </form>
             </section>

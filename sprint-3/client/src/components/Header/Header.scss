@@ -13,7 +13,6 @@ html,body
 }
 
 .app {
-
     &__header-container {
         
         @include tablet {
@@ -28,23 +27,19 @@ html,body
         margin-left: 30vw;
         padding: 18px 0 18px 0;
         width: 38%;
-
     }
-
         @include tablet {
-            margin-left: 5vw;
-            width: 100%;
-            margin-top: 0.7rem;
+        margin-left: 5vw;
+        width: 100%;
+        margin-top: 0.7rem;
         }
-
         @include desktop {
-            width: 42%;
-            margin-left: 14vw;
+        width: 42%;
+        margin-left: 14vw;
         }
 }
 
     &__header-search {
-        
         @include mobile {
         display: flex;
         width: 87%;
@@ -54,78 +49,69 @@ html,body
         border-radius: $border-radius;
         margin-left: 5.5vw;
         margin-bottom: 10px;
-
-        }
-
+    }
         @include tablet {
-            width: 35%;
-            margin-top: 1.4rem;
-            height: 50px;
-            margin-left: 15vw;
-        }
-
+        width: 35%;
+        margin-top: 1.4rem;
+        height: 50px;
+        margin-left: 15vw;
+    }
         @include desktop {
-            width: 20%;
-            height: 43px;
-            margin-left: 30vw;
-
+        width: 20%;
+        height: 43px;
+        margin-left: 30vw;
         }
     }
 
     &__header-searchicon {
         @include mobile {
-            position: relative;
-            top: -3rem;
-            left: 10%;
-            width: 6%;   
-        }
-
+        position: relative;
+        top: -3rem;
+        left: 10%;
+        width: 6%;   
+    }
         @include tablet {
-            width: 3%;
-            left: -16.3rem;
-            top: 0.4rem;
-        }
-
+        width: 3%;
+        left: -16.3rem;
+        top: 0.4rem;
+    }
         @include desktop {
-            width: 1.5%;
-            margin-left: -1rem;
-
-        }
+        width: 1.5%;
+        margin-left: -1rem;
+      }
     }  
 
     &__header-button {
         @include mobile {
-            display: flex;
-            width: 68%;
-            height: 48px;
-            border: 1px solid $button;
-            background-color: $button;
-            border-radius: $border-radius;
-            font-weight: bold;
-            color: #FFFFFF;
-            font-size: 15px;
-            margin-left: 6vw;
-            margin-top: -1.5rem;
-            padding-left: 26vw;
-            padding-top: 0.9rem;
-        }
-
+        display: flex;
+        width: 68%;
+        height: 48px;
+        border: 1px solid $button;
+        background-color: $button;
+        border-radius: $border-radius;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-left: 6vw;
+        margin-top: -1.5rem;
+        padding-left: 26vw;
+        padding-top: 0.9rem;
+    }
         @include tablet {
-            width: 100px;
-            padding-left: 2vw;
-            margin-left: 74.5vw;
-            margin-top: -4.5rem;
-            height: 53px;
-            padding-top: 1rem;
-            padding-left: 1.7rem;
-        }
-
+        width: 100px;
+        padding-left: 2vw;
+        margin-left: 74.5vw;
+        margin-top: -4.5rem;
+        height: 53px;
+        padding-top: 1rem;
+        padding-left: 1.7rem;
+    }
         @include desktop {
-            height: 48px;
-            margin-left: 74.5vw;
-            margin-top: -4.2rem;
-            padding-top: 0.83rem;
-        }
+        height: 48px;
+        margin-left: 74.5vw;
+        margin-top: -4.2rem;
+        padding-top: 0.83rem;
+      }
     }
 
     &__header-buttonicon {
@@ -135,39 +121,35 @@ html,body
             left: 25vw;
             width: 5%;
         }
-
         @include tablet {
-            left: 75.5vw;
-            width: 2.2%;
-            top: -4.7rem;
-        }
-
+        left: 75.5vw;
+        width: 2.2%;
+        top: -4.7rem;
+    }
         @include desktop {
-            left: 75vw;
-            width: 1.1%;
-            top: -4.6rem;
-        }
+        left: 75vw;
+        width: 1.1%;
+        top: -4.6rem;
+      }
     }
 
     &__header-usericon {
         @include mobile {
-            width: 55px;
-            height: 53px;
-            border-radius: 50%;
-            position: relative;
-            left: 73%;
-            top: -3.2rem;
-        }
-        
+        width: 55px;
+        height: 53px;
+        border-radius: 50%;
+        position: relative;
+        left: 73%;
+        top: -3.2rem;
+      }
         @include tablet {
-            left: 88%;
-            height: 55px;
-            top: -3.4rem;
-        }
-
+        left: 88%;
+        height: 55px;
+        top: -3.4rem;
+    }
         @include desktop {
-            left: 82%;
-            top: -3.2rem;
+        left: 82%;
+        top: -3.2rem;
         }
     }
 
@@ -181,12 +163,10 @@ html,body
         padding-left: 12vw;
 
     }
-
     @include tablet {
         padding-left: 6vw;
         font-size: 17px;
     }
-
     @include desktop {
         padding-left: 3.5vw;
         font-size: 15px;

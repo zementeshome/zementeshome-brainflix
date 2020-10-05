@@ -2,12 +2,9 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import VideoUpload from './components/VideoUpload/VideoUpload';
 import Home from './components/Home/Home';
-  
 
 class App extends React.Component {
-
 render() { 
-
   return (
     <Router>
       <Switch>

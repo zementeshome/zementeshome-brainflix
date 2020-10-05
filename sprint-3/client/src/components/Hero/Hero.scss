@@ -3,13 +3,11 @@
 @import '../../styles/partials/fonts';
 
 .app {
-
-    &__hero-videobox {
+     &__hero-videobox {
         @include tablet {
             width: 100%;
             background-color: black;
         }
-
         @include desktop {
             height: 450px;
         }
@@ -21,7 +19,6 @@
             margin-top: -2.5rem;
             object-fit: cover;
         }
-
         @include tablet {
             display: flex;
             margin-left: 4.5vw;
@@ -29,7 +26,6 @@
             height: 390px;
             padding-bottom: 0;    
         }
-
         @include desktop {
             height: 450px;
             width: 60%;
@@ -48,12 +44,10 @@
             top: -3.5rem;
             border-radius: $border-radius;
         }
-
         @include tablet {
             width: 8%;
             left: 7%;
         }
-
         @include desktop {
             width: 3%;
             left: 21%;
@@ -82,12 +76,10 @@
             top: -5.97rem;
             border-radius: $border-radius;
         }
-
         @include tablet {
             left: 17%;
             width: 63%;
         }
-
         @include desktop {
             width: 45%;
             height: 35px;
@@ -106,7 +98,6 @@
             border-bottom-right-radius: 3px;
 
         }
-
         @include tablet {
             width: 84%;
         }
@@ -126,13 +117,11 @@
             top: -8.5rem;
             border-radius: $border-radius;
         }
-
         @include tablet {
             width: 11%;
             left: 82%;
             height: 41.5px;
         }
-
         @include desktop {
             left: 71%;
             height: 35.5px;
@@ -149,13 +138,11 @@
             top: 0.6rem;
             padding-right: 0.2rem;
             padding-left: 0.7rem;
-    }
-
+        }
         @include tablet {
             width: 24%;
             padding-left: 0.8rem;
         }
-
         @include desktop {
             width: 18%;
             padding-left: 1.2rem;
@@ -165,18 +152,14 @@
         @include mobile {
             display: none;
         }
-
         @include tablet {
             font-size: 12px;
             color: #FFFFFF;
             padding-top: -0.5rem;
-            display: inline-flex; 
-            
+            display: inline-flex;     
         }
-
         @include desktop {
             font-size: 10.5px;
         }
     }
-
 }

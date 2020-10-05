@@ -3,7 +3,6 @@
 @import '../../styles/partials/fonts';
 
 .app {
-
     &__main-div {
     @include desktop {
         display: flex;
